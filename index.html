@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="vh-100 d-flex justify-content-center align-items-center">
+    <main class="container m-auto">
+      <article class="row gap-4 flex-md-row-reverse">
+        <picture class="col-md-5 text-sm-center">
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="windows of some applications"
+            class="col-md-5 m-auto w-100"
+            loading="lazy"
+          />
+        </picture>
+        <section class="col-md-6 row gap-4 gap-md-2 align-content-center">
+          <h1 class="h1 display-4 fw-bold px-3 pt-2">Stay updated!</h1>
+          <p class="ps-3 pe-5">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul
+            class="ps-3 pe-5 mb-2 mb-md-0 list-unstyled d-flex flex-column gap-md-2"
+          >
+            <li class="d-flex align-items-start gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon" />
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon" />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <img src="assets/images/icon-list.svg" alt="icon" />
+              <p>And much more!</p>
+            </li>
+          </ul>
+          <form id="form" class="d-flex flex-column mb-5 mb-md-0 pe-md-5">
+            <div class="m-3 col-sm-6 position-relative w-auto">
+              <div
+                class="form-text position-absolute top-0 end-0 text-danger text-hide"
+              >
+                Valid email required
+              </div>
+              <label for="email" class="form-label mb-1">Email address</label>
+              <input
+                name="email"
+                type="email"
+                class="form-control mb-2 p-3 border border-2"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="email@company.com"
+                required="false"
+              />
+            </div>
+            <button id="btn-submit" type="submit" class="btn btn-dark mx-3 p-2">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
+      </article>
+      <div class="attribution text-center mt-4">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/alexsanderBDS" target="_blank">Alexsander</a
+        >.
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog top-50 translate-middle-y m-md-auto m-4">
+        <div class="modal-content p-md-4 m-md-4 p-4">
+          <div class="modal-header">
+            <div class="d-flex flex-column">
+              <img
+                src="assets/images/icon-success.svg"
+                alt="icon success"
+                class="d-block mb-3"
+                width="50"
+              />
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Thanks for subscribing!
+              </h1>
+            </div>
+            <button
+              type="button"
+              class="btn-close position-absolute top-0 end-0 m-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="my-3">
+              A confirmation email has been sent to ash@loremcompany.com. Please
+              open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary p-2"
+              data-bs-dismiss="modal"
+            >
+              Dismiss message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+
+    <!-- Success message end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

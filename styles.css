@@ -1,0 +1,61 @@
+/* INITIAL STYLES */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* INITIAL STYLES */
+
+.popup-message.close {
+  display: none !important;
+}
+
+* {
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  --clr-primary: hsl(4, 100%, 67%);
+  --clr-neutral-dark: hsl(234, 29%, 20%);
+  --clr-neutral-grey-dark: hsl(235, 18%, 26%);
+  --clr-neutral-grey-light: hsl(231, 7%, 60%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+  color: hsl(234, 29%, 20%);
+  font-size: calc(16rem / 16);
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+}
+
+input,
+button {
+  /* max-width: 100% !important; */
+}
+
+.text-hide {
+  display: none;
+}
+
+input {
+  box-sizing: border-box;
+}
